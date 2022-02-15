@@ -1,0 +1,12 @@
+PROCEDURE mirror (str1,str2)
+VAR
+    str1,str2 : string;
+    j:integer;
+BEGIN
+    j=0;
+    FOR i FROM str1.length-1 TO 0  DO
+        str2 [j]=str1[i]
+        j++
+    END_FOR
+    writre (str2)
+END
